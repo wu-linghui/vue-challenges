@@ -16,8 +16,8 @@
     "skipLibCheck": true,
     "types": ["vite/client"],
     "paths": {
-      "@/*": ["src/*"],
-      "~/*": ["src/views/demo/*"]
+      "@/*": ["./src/*"],
+      "~/*": ["./src/views/demo/*"]
     },
   },
   "include": [

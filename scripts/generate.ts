@@ -1,8 +1,8 @@
 import { resolve } from 'path'
 import { readFileSync, readdirSync, writeFileSync } from 'fs'
-import MagicString from 'magic-string'
-import { copy, ensureDirSync } from 'fs-extra'
-import fg from 'fast-glob'
+// import MagicString from 'magic-string'
+// import { copy, ensureDirSync } from 'fs-extra'
+// import fg from 'fast-glob'
 import { NL } from '@alexzzz/nl'
 import Inquirer from 'inquirer'
 // import { injectMessage, normalizeCount } from './helper'
@@ -18,7 +18,7 @@ async function ask(): Promise<NeededInfo> {
     {
       type: 'input',
       name: 'name',
-      message: 'what\'s this library\'s name?',
+      message: 'what\'s this practice\'s name?',
     }
   ] as Inquirer.Question[]
   const { name } = await Inquirer.prompt(questions)

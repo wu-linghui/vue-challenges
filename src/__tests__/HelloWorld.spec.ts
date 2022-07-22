@@ -4,7 +4,7 @@ import { describe, it, expect } from 'vitest';
 import HelloWorld from "../views/demo/HelloWorld.vue";
 
 interface HelloWorldProps {
-  msg: string,
+  msg: string;
 }
 
 describe("HelloWorld", () => {

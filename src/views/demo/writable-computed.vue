@@ -9,6 +9,7 @@ const plusOne = computed({
   set(newVal) {
     console.log(newVal);
     count.value++;
+    count.value = newVal - 1;
   }
 })
 

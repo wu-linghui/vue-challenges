@@ -20,6 +20,8 @@ count.value = 1
 setTimeout(() => count.value = 2)
 
 unWatch()
+// 文档解析
+// https://v3.cn.vuejs.org/guide/reactivity-computed-watchers.html#watcheffect
 
 /**
  * 挑战 2: Watch 对象

@@ -7,7 +7,7 @@ const router = useRoute();
 const currentPath = ref();
 const count = ref(1);
 provide('count', count);
-setInterval(() => {
+setTimeout(() => {
   count.value++;
 }, 1000);
 watch(

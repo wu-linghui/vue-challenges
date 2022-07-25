@@ -1,7 +1,7 @@
 import { mount } from "@vue/test-utils"
 import { describe, it, expect } from "vitest"
 
-import App from "../views/demo/dependency-injection.vue"
+import App from "../views/father.vue"
 
 describe("Dependency Injection", () => {
   it("should work'", () => {

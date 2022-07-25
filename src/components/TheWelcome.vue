@@ -13,7 +13,7 @@ import SupportIcon from "./icons/IconSupport.vue";
       <DocumentationIcon />
     </template>
     <template #heading>
-      <RouterLink to="/helloword">helloword</RouterLink>
+      <RouterLink to="/helloworld">helloword</RouterLink>
     </template>
   </WelcomeItem>
 
@@ -22,7 +22,7 @@ import SupportIcon from "./icons/IconSupport.vue";
       <ToolingIcon />
     </template>
     <template #heading>
-      <RouterLink to="/helloword">helloword</RouterLink>
+      <RouterLink to="/helloworld">helloword</RouterLink>
     </template>
   </WelcomeItem>
 

@@ -1,6 +1,21 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+import { useRoute } from 'vue-router'
+import { provide, ref, watch } from 'vue';
+const router = useRoute();
+const currentPath = ref();
+const count = ref(1);
+provide('count', count);
+setInterval(() => {
+  count.value++;
+}, 1000);
+watch(
+  () => router.path,
+  (path) => {
+    currentPath.value = path;
+  }
+);
 </script>
 
 <template>
@@ -16,8 +31,10 @@ import HelloWorld from './components/HelloWorld.vue'
       </nav>
     </div>
   </header>
-
-  <RouterView />
+  <div>
+    <!-- <RouterLink to="/" v-if="$route">back to home</RouterLink> -->
+    <RouterView />
+  </div>
 </template>
 
 <style scoped>

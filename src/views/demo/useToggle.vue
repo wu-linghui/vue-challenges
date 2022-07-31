@@ -23,7 +23,7 @@ const [state, toggle] = useToggle(false)
 
 <template>
   <p>State: {{ state ? 'ON' : 'OFF' }}</p>
-  <p @click="toggle">
+  <p @click="toggle()">
     Toggle state
   </p>
 </template>
